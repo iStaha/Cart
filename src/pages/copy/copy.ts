@@ -1,21 +1,31 @@
+
 import { Component } from '@angular/core';
 import { NavController, IonicPage,    MenuController  } from 'ionic-angular';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
-/* import { LoginPage } from '../login/login'; */
 
+/**
+ * Generated class for the CopyPage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-copy',
+  templateUrl: 'copy.html',
 })
-export class HomePage {
+export class CopyPage {
+
+ 
+  
+
   username = '';
   email = '';
 
-  tab1Root: any = 'FeedPage';
-  tab2Root: any = 'SearchPage';
- /*  tab3Root: any = 'AccountPage';  */
+ /*  tab1Root: any = 'FeedPage';
+  tab2Root: any = 'SearchPage'; */
+ /*   tab3Root: any = 'AccountPage';  */
  
 
   constructor(public nav: NavController,  private auth: AuthServiceProvider ,  public menu: MenuController) {
@@ -24,6 +34,10 @@ export class HomePage {
     this.username = info['name'];
     this.email = info['email'];
 
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad CopyPage');
   }
 
   ionViewDidEnter() {
@@ -41,4 +55,11 @@ export class HomePage {
     
 
 }
+
+public launchCreatePage() {
+  console.log("dcsdc");
+  this.nav.setRoot('CreatePage');
+}
+
+
 }

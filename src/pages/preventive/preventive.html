@@ -1,0 +1,52 @@
+<!--
+  Generated template for the PreventivePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="need">
+        <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+              </button>
+        <ion-title>Preventive</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="logout()">
+                    <ion-icon name="log-out"></ion-icon>
+                  </button>
+        </ion-buttons>
+
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="outer-content">
+
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-list>
+
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="././assets/img/thumbnail-rotla.png">
+            </ion-thumbnail>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end><ion-icon name="create"></ion-icon></button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="././assets/img/thumbnail-rotla.png">
+            </ion-thumbnail>
+            <h2>My Neighbor Totoro</h2>
+            <p>Hayao Miyazaki • 1988</p>
+            <button ion-button clear item-end><ion-icon name="ios-create-outline"></ion-icon> </button>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

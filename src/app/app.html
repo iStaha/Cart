@@ -1,17 +1,30 @@
 <ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header color="need">
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+
+        <!--  <img class="circle-pic" middle src="http://autokadabra.ru/system/uploads/users/18/18340/small.png?1318432918" /> -->
+
+        <ion-card text-center class="hide-card">
+            <img src="http://autokadabra.ru/system/uploads/users/18/18340/small.png?1318432918" class="custom-avatar" />
+            <h2>Victorcodex</h2>
+            <p>Have some p tag here</p>
+            <p>I am the third guy inline here</p>
+            <hr>
+        </ion-card>
+        <ion-list>
+            <button menuClose ion-item (click)="launchHmePage()">
+                        <ion-icon name="cart" item-start></ion-icon>  Fault Report
+                </button>
+            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                <ion-icon name="cart" item-start></ion-icon>  {{p.title}} 
+        </button>
+        </ion-list>
+    </ion-content>
 
 </ion-menu>
 

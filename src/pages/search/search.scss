@@ -1,5 +1,5 @@
-        page-home {
-            /*  .scroll-content {
+        page-search {
+            /* .scroll-content {
         left: 0;
         right: 0;
         top: 0;
@@ -12,5 +12,11 @@
         -webkit-overflow-scrolling: touch;
         will-change: scroll-position;
         contain: size style layout;
-    }   */
+    } */
+            ion-icon {
+                color: rgba(220, 153, 104, 1);
+            }
+            ion-icon.dif {
+                color: #FFF;
+            }
         }

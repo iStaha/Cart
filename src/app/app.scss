@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,130 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+ion-menu {
+    .toolbar-background-md {
+        /*    border-color: #b2b2b2; */
+        background:  #ef8a40;
+    }
+    .toolbar-title-md {
+        color: #FFF;
+    }
+    .item-md {
+        background:  #FFE6DC;
+        color: #FFF;
+    }
+    .content-md {
+        background:  #FFE6DC;
+        color: #FFF;
+    }
+}
+
+.picker-md .picker-button,
+{
+    color:  #FFE6DC;
+}
+
+.picker-md .picker-opt.picker-opt-selected {
+    color:  #FFE6DC;
+}
+
+.button-md-need {
+    color: #fff;
+    background-color: #e09259;
+}
+
+.bwid {
+    width: 100%
+}
+
+.item-radio-checked.item-md ion-label {
+    color: #e09259;
+}
+
+.radio-md .radio-checked {
+    border-color:  #e09259;
+}
+
+.radio-md .radio-inner {
+    background-color: #e09259;
+}
+
+.label{
+    color:  #e09259;
+}
+
+.toggle-md-need.toggle-checked .toggle-icon {
+    background-color:#e09259;
+}
+
+.toggle-md-need.toggle-checked .toggle-inner {
+    background-color: #e09259;
+}
+
+.button-outline-md-need {
+    border-color: #e09259;
+    color: #e09259;
+    background-color: transparent;
+}
+.toolbar-md-need .toolbar-background-md {
+    background: #e09259;
+}
+
+.item-md {
+    color:  #FFE6DC;
+}
+
+.alert-md .alert-button {
+    color:  #FFE6DC;
+}
+
+.alert-md [aria-checked=true] .alert-radio-icon {
+    border-color:  #FFE6DC;
+}
+
+.alert-md .alert-radio-inner {
+    background-color:  #FFE6DC;
+}
+
+.alert-md [aria-checked=true] .alert-radio-label {
+    color:  #FFE6DC;
+}
+
+.alert-md .alert-title {
+    color:  #FFE6DC;
+}
+
+.circle-pic {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hide-card {
+    -webkit-box-shadow: none!important;
+}
+
+.custom-avatar {
+    height: 15vw;
+    width: 14vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-md {
+    background: rgba(255, 255, 255, 0);
+}
+
+.card-md h2,
+.card-md p {
+    color: #FFF;
+}
+
+.button-md-need {
+    color: #fff;
+    background-color:  #FFE6DC;
+}

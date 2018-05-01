@@ -1,0 +1,50 @@
+page-gettingstarted {
+
+    .welcome {
+        background: rgba(220, 153, 104, 0.31);
+       /*  background-image: url('../../assets/icon/welcome_illustration.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: auto;
+        z-index: 2;
+        position: relative; */
+
+
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          row {
+            width: 100%;
+          }
+          .flex-item {
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+          }
+           .flex-item-welcome {     
+                margin-left: -25px;
+               margin-right: -25px;
+
+          }
+          .flex-button {     
+            padding: 5px;
+            margin: 10px;
+      }
+      .flex-text {     
+        margin: 10px;
+        text-align: center;
+  }
+          .im{
+           
+            margin-top:30px;
+          }
+     }
+
+}
